@@ -14,7 +14,7 @@ SubMan is a standalone Android application designed for efficient subscription m
 ## Visual Interface
 
 Placeholder for UI Overview Screenshot
-<!-- [IMAGE_PLACEHOLDER: home_screen_overview] -->
+<!-- [https://github.com/alharari01/SubMan/blob/main/design/welcome_onboarding/screen.png] -->
 
 Placeholder for Feature Interaction Screenshots
 <!-- [IMAGE_PLACEHOLDER: add_subscription_screen] -->
