@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calendar &amp; Add Onboarding</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-white">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-hidden bg-background-light dark:bg-background-dark group/design-root">
+<!-- Hero Illustration Area -->
+<div class="@container flex-1 flex flex-col">
+<div class="@[480px]:px-4 @[480px]:py-3 flex-1 flex flex-col">
+<div class="w-full flex-1 bg-center bg-no-repeat bg-contain bg-origin-content flex flex-col justify-end overflow-hidden @[480px]:rounded-lg min-h-[320px] max-h-[50vh]" data-alt="Stylized monthly calendar grid with a floating plus action button and highlighted due dates" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5PTLsMInAFnsNPFZz0Aw1OcqPMN4K_zem3nGiSIduWNAPJnuxMoUvvR0g5lAD9tWcW4CDkivxUHnF3hPvN6QWLu_s-uLccBuw6V1ecf5F5zlfV-eOm2bbqQN_wzqts15j5FYDXpyTLAEJCIAnz_R1uxnA_FnkodxtgpNrFteK8POypeHlOhVTFFIvFB0D3O7ra5o6QviqvqKv-KyaTe5fvtRuo8su03FUpBT96ZBMk6kaGlwbIeciSktQVUCkmzzhnYX8THuSLYs");'>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet / Content Area -->
+<div class="flex flex-col px-6 pb-8 pt-4 bg-background-light dark:bg-background-dark z-10">
+<!-- Headline -->
+<h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight text-center pb-3">
+                Never Miss a Due Date
+            </h1>
+<!-- Body Text -->
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal pb-8 text-center px-2">
+                Switch to Calendar View to see upcoming payments instantly. Tap the '+' button to add new subscriptions.
+            </p>
+<!-- Feature List Items -->
+<div class="flex flex-col gap-4 mb-10">
+<!-- Item 1: Calendar -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#1a212e] px-4 py-3 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800/50">
+<div class="flex items-center gap-4 w-full">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined text-[24px]">calendar_month</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Calendar View</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal truncate">See all due dates at a glance</p>
+</div>
+</div>
+</div>
+<!-- Item 2: Add Subscription -->
+<div class="flex items-center gap-4 bg-white dark:bg-[#1a212e] px-4 py-3 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800/50">
+<div class="flex items-center gap-4 w-full">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined text-[24px]">add_circle</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-tight">Quick Add</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal truncate">Quickly add bills in seconds</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="flex flex-col items-center gap-6 mt-auto">
+<!-- Pagination Dots -->
+<div class="flex gap-2">
+<div class="size-2 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+<div class="size-2 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+<div class="w-8 h-2 rounded-full bg-primary transition-all"></div>
+</div>
+<!-- Primary Button -->
+<button class="w-full bg-primary hover:bg-blue-600 active:scale-[0.98] transition-all text-white font-bold text-lg h-14 rounded-xl shadow-lg shadow-primary/25 flex items-center justify-center">
+                    Start Tracking
+                </button>
+</div>
+<!-- iOS Safe Area Spacer -->
+<div class="h-4 w-full"></div>
+</div>
+</div>
+</body></html>

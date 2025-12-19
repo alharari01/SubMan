@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Homepage Overview</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#161e2c", // Slightly lighter than bg-dark for cards
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-24">
+<!-- Top Header -->
+<header class="flex items-center justify-between p-4 sticky top-0 z-20 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md">
+<h2 class="text-2xl font-extrabold leading-tight tracking-tight">Overview</h2>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-slate-700 dark:text-white">settings</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex flex-col gap-6">
+<!-- Hero Card: Total Spending -->
+<section class="px-4">
+<div class="relative overflow-hidden rounded-2xl bg-primary p-6 shadow-xl shadow-primary/20">
+<!-- Abstract Background Pattern -->
+<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-3xl"></div>
+<div class="absolute -left-10 -bottom-10 h-32 w-32 rounded-full bg-black/10 blur-2xl"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<p class="text-blue-100 text-sm font-medium tracking-wide uppercase opacity-90">Total Monthly Expenses</p>
+<div class="flex items-center gap-1 rounded-full bg-white/20 px-2 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+<span>2.4%</span>
+</div>
+</div>
+<p class="text-white text-4xl font-extrabold mt-2 tracking-tight">$345.00</p>
+<p class="text-blue-100/80 text-sm mt-1">3 subscriptions due this week</p>
+</div>
+</div>
+</section>
+<!-- Quick Actions (Chips) -->
+<section class="w-full overflow-x-auto no-scrollbar pl-4">
+<div class="flex gap-3 pr-4">
+<button class="flex items-center gap-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 px-5 py-2.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+<span class="text-sm font-bold">Analytics</span>
+</button>
+<button class="flex items-center gap-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 px-5 py-2.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<span class="text-sm font-bold">Calendar</span>
+</button>
+<button class="flex items-center gap-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 px-5 py-2.5 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-[20px]">history</span>
+<span class="text-sm font-bold">History</span>
+</button>
+</div>
+</section>
+<!-- Upcoming Payments Section -->
+<section class="flex flex-col gap-2">
+<div class="flex items-center justify-between px-4 pb-2">
+<h3 class="text-lg font-bold leading-tight">Upcoming Payments</h3>
+<button class="text-sm font-medium text-primary hover:text-primary/80">See all</button>
+</div>
+<!-- List Items -->
+<div class="flex flex-col gap-3 px-4">
+<!-- Item 1: Netflix -->
+<div class="group flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-surface-dark p-3 pr-4 shadow-sm border border-slate-100 dark:border-slate-800/50 hover:border-primary/50 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black">
+<img class="h-full w-full object-cover opacity-80" data-alt="Netflix logo with red N on black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw-5B7dcM7b7zV_qZ7-Iq7NL7YSeWu69zGP4XPlremGZqWkh2XE-ivhE7SdgHOv9pnJoBgr6CdogkQ9hhZJCybCiFLNjd_dj-FDvFr2tb-r0jK0Wi6ooKTSiKJOsmtgz3-W62yQbgHuEqxnuWgDZ7AedJyYqHfdV2yYn9DLX0IMNpVBV77rXEN3qxPyJ_iCsvlc0oHahj6I_WohEaD0KWi0Z9M5HnAATC8JwWeHBVqGqgstPR6zj973JgUD6ifHhQ6hozmijWUO0I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<span class="absolute bottom-1 text-[10px] font-bold text-white tracking-widest">NETFLIX</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold leading-normal">Netflix</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-red-500"></span>
+                                    Due Tomorrow
+                                </p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-base font-bold text-slate-900 dark:text-white">$15.99</p>
+</div>
+</div>
+<!-- Item 2: Spotify -->
+<div class="group flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-surface-dark p-3 pr-4 shadow-sm border border-slate-100 dark:border-slate-800/50 hover:border-primary/50 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#1DB954]">
+<span class="material-symbols-outlined text-white text-3xl">music_note</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold leading-normal">Spotify</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Oct 24</p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-base font-bold text-slate-900 dark:text-white">$9.99</p>
+</div>
+</div>
+<!-- Item 3: Adobe -->
+<div class="group flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-surface-dark p-3 pr-4 shadow-sm border border-slate-100 dark:border-slate-800/50 hover:border-primary/50 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[#FF0000]">
+<img class="h-full w-full object-cover mix-blend-multiply" data-alt="Abstract red geometric shapes resembling Adobe branding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcINPicGy4XARSDL8f511ff5O8DWCHJrYdUgL2b3EKs9ZXcuyvXoTkzix_QW0oWRWkty7sjUzpvlBX8GvPIs2Yvyh6Me47QkVcIJpoMG-qmmI1K9phTUNGL-Elv8nmq2G1f7YDyy033SgPf3nv6pB1eQUJ7Xg-lXywwcq-ZkwUajUmGx79sUYPbdz4N4mLLRQUEcDX-vpMY2NGoeaBpmeRS-OBk8C555WM1hPvxSCj4p17nKMacHuTVu0JhzZ02VAzHYVybm8FUPQ"/>
+<span class="absolute text-white font-bold text-xl">Ae</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold leading-normal">Adobe Creative Cloud</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Oct 26</p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-base font-bold text-slate-900 dark:text-white">$54.99</p>
+</div>
+</div>
+<!-- Item 4: Gym -->
+<div class="group flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-surface-dark p-3 pr-4 shadow-sm border border-slate-100 dark:border-slate-800/50 hover:border-primary/50 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-slate-800">
+<span class="material-symbols-outlined text-white text-3xl">fitness_center</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-bold leading-normal">Gold's Gym</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Oct 28</p>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<p class="text-base font-bold text-slate-900 dark:text-white">$45.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Add Button (integrated into layout for easier access on phones) -->
+<div class="fixed bottom-24 right-4 z-30">
+<button class="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 hover:bg-blue-600 transition-colors">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-40 bg-white/95 dark:bg-surface-dark/95 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 pb-safe">
+<div class="flex h-16 items-center justify-around px-2">
+<button class="flex flex-1 flex-col items-center justify-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[24px] filled">home</span>
+<span class="text-[10px] font-semibold">Home</span>
+</button>
+<button class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+<span class="material-symbols-outlined text-[24px]">search</span>
+<span class="text-[10px] font-medium">Search</span>
+</button>
+<button class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+<span class="material-symbols-outlined text-[24px]">calendar_today</span>
+<span class="text-[10px] font-medium">Calendar</span>
+</button>
+<button class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+<!-- Safe Area Spacer for iOS Home Indicator -->
+<div class="h-5 w-full"></div>
+</nav>
+</div>
+</body></html>

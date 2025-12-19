@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Overview Onboarding</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased selection:bg-primary/30">
+<div class="relative flex h-full min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<!-- Top Navigation -->
+<div class="flex items-center w-full p-4 pt-6 justify-end z-10">
+<button class="flex items-center justify-end px-2 py-1 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="text-slate-500 dark:text-[#92a4c9] text-base font-bold leading-normal tracking-[0.015em]">Skip</span>
+</button>
+</div>
+<!-- Main Content (Centered) -->
+<div class="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6">
+<!-- Illustration Container -->
+<div class="@container w-full mb-8">
+<div class="w-full aspect-square max-h-[360px] mx-auto bg-center bg-no-repeat bg-cover rounded-2xl shadow-2xl shadow-primary/10 flex flex-col justify-end overflow-hidden bg-slate-200 dark:bg-[#1a2333] relative group" data-alt="Abstract 3D chart visualization showing financial overview with blue accents" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBU3FQXfEBWj2L0rjkjqoO8fQdRvDYk7knPMfEvIXs7qNORvc1APi4oiV1dBtowNcx7_CQdfyhrMUmL8wGsZpFv7Byb3wu9iuOLiG7lv06Jntjt62VlofZFtNn8AUli0bEujcJXBLxci6Q8R5C3qAAGEszJdWOH_RQyXUbtQO7GOK4VVKasA8A2BDx8SkyXgEztmK38ksuvtwSniZX-t3gn8kE54ax4O-_6x6xD_yXQNjfYaD5xGRxraOSEsanKUy3yLXaxaKPOjTg");'>
+<!-- Decorative overlay for better text contrast if needed later, kept subtle here -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-light/20 to-transparent dark:from-background-dark/20 pointer-events-none"></div>
+</div>
+</div>
+<!-- Text Content -->
+<div class="flex flex-col items-center gap-2">
+<h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-extrabold leading-tight text-center">
+                    Track Your Spending
+                </h1>
+<p class="text-slate-600 dark:text-[#94A3B8] text-base font-medium leading-relaxed text-center max-w-[320px]">
+                    Get a complete overview of your monthly subscriptions and upcoming bills in one simple dashboard.
+                </p>
+</div>
+</div>
+<!-- Bottom Controls -->
+<div class="w-full flex flex-col items-center pb-8 pt-6 max-w-md mx-auto">
+<!-- Page Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5 mb-2">
+<!-- Dot 1 (Inactive) -->
+<div class="h-2 w-2 rounded-full bg-slate-300 dark:bg-[#324467]"></div>
+<!-- Dot 2 (Active - Pill Shape) -->
+<div class="h-2 w-8 rounded-full bg-primary shadow-[0_0_10px_rgba(19,91,236,0.5)]"></div>
+<!-- Dot 3 (Inactive) -->
+<div class="h-2 w-2 rounded-full bg-slate-300 dark:bg-[#324467]"></div>
+<!-- Dot 4 (Inactive) -->
+<div class="h-2 w-2 rounded-full bg-slate-300 dark:bg-[#324467]"></div>
+</div>
+<!-- Primary Action Button -->
+<div class="w-full px-6">
+<button class="w-full h-14 bg-primary hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 text-white text-lg font-bold rounded-full shadow-lg shadow-primary/25 flex items-center justify-center group">
+                    Next
+                    <span class="material-symbols-outlined ml-2 text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- iOS Home Indicator Safe Space -->
+<div class="h-4"></div>
+</div>
+</div>
+</body></html>

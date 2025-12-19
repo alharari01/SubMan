@@ -1,0 +1,52 @@
+# Flutter/Dart
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.packages
+app/build/
+app/pubspec.lock
+
+# Android
+app/android/local.properties
+app/android/app/debug
+app/android/app/profile
+app/android/app/release
+app/android/.gradle/
+app/android/app/build/
+**/android/**/GeneratedPluginRegistrant.java
+
+# iOS
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Flutter/App.framework
+app/ios/Flutter/Flutter.framework
+app/ios/Flutter/Flutter.podspec
+app/ios/.generated/
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Runner/GeneratedPluginRegistrant.h
+app/ios/Runner/GeneratedPluginRegistrant.m
+**/ios/**/*.last_build_id
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history/
+
+# Logs and temporary files
+*.log
+*.class
+*.swp
+.DS_Store
+.history
+
+# Web
+app/build/web/
+
+# Project Specific
+**/icons/icon_*.png
+**/icons/icon_*.jpg
+**/icons/icon_*.jpeg

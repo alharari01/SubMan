@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome Onboarding</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#135bec",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased overflow-hidden">
+<div class="relative flex h-full min-h-screen w-full flex-col justify-between">
+<!-- Top Bar: Skip Button -->
+<div class="flex items-center p-4 pt-12 pb-2 justify-end w-full z-10">
+<button class="flex items-center justify-end px-2 py-1 rounded hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<p class="text-slate-500 dark:text-[#92a4c9] text-base font-bold leading-normal tracking-[0.015em] shrink-0">Skip</p>
+</button>
+</div>
+<!-- Main Content Area: Centered Hero & Text -->
+<div class="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-4 sm:px-6">
+<!-- Hero Illustration -->
+<!-- Modified from ImageGrid to be a single prominent hero -->
+<div class="w-full flex justify-center mb-8 relative">
+<div class="absolute inset-0 bg-primary/20 blur-[60px] rounded-full transform scale-75 opacity-50 pointer-events-none"></div>
+<div class="w-64 h-64 sm:w-80 sm:h-80 bg-center bg-contain bg-no-repeat relative z-0 transform transition-transform duration-700 hover:scale-105" data-alt="3D abstract illustration of digital bills stacking into a secure blue shield folder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBP27TP9Y-flU7VslPfjhuYePZ30YC6ppAogtTaPEnyRDxYlcXMg21Bf74loFvZYQD726qjlFAKoZy7r-6uV0_hilhYzKjV1Uatmi3B7OnqFk7npVq7CiOYw82FQphMfPCNfCJW4gYLv0EhOpJ0AndgWLzQxnKGsFHIRhZqB8otZpD-xzyfYeKSyai2ZXSAP_6ZA6IQoK1cnAlu2RFwX55kqfZJErVUP_JtUMnXjOQ9R2UHQSZrxTP-OPoqpTgSlTHnZyMAxKsI7xU");'>
+</div>
+</div>
+<!-- Text Content -->
+<div class="flex flex-col items-center text-center">
+<!-- HeadlineText Component -->
+<h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-extrabold leading-tight px-4 pb-3">
+                    Total Financial Clarity
+                </h1>
+<!-- BodyText Component -->
+<p class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal px-4 max-w-xs">
+                    Stop guessing where your money goes. Track every subscription and bill in a single, secure dashboard.
+                </p>
+</div>
+</div>
+<!-- Footer Area: Indicators & CTA -->
+<div class="w-full max-w-md mx-auto px-4 pb-10 pt-6 flex flex-col items-center gap-8">
+<!-- PageIndicators Component -->
+<div class="flex w-full flex-row items-center justify-center gap-3">
+<div class="h-2 w-2 rounded-full bg-primary transition-all duration-300 w-6"></div>
+<div class="h-2 w-2 rounded-full bg-slate-300 dark:bg-[#324467]"></div>
+<div class="h-2 w-2 rounded-full bg-slate-300 dark:bg-[#324467]"></div>
+</div>
+<!-- Primary CTA Button -->
+<!-- New component generated to match theme -->
+<button class="w-full bg-primary hover:bg-blue-600 active:bg-blue-700 text-white text-lg font-bold h-14 rounded-xl shadow-lg shadow-primary/25 transition-all duration-200 flex items-center justify-center gap-2">
+                Get Started
+                <span class="material-symbols-outlined text-[20px] font-bold">arrow_forward</span>
+</button>
+<!-- Safe Area Spacer for iOS -->
+<div class="h-2 w-full"></div>
+</div>
+</div>
+</body></html>
