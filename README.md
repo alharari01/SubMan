@@ -24,3 +24,11 @@ The application is built using the following architecture and technologies:
 - **Local Database**: Sqflite (SQLite)
 - **Preferences**: Shared Preferences for configuration persistence
 - **UI Components**: Custom design system including a premium credit-card styled hero interface
+
+  [Download Beta Apk](https://github.com/alharari01/SubMan/releases/tag/v0.1.0-beta)
+
+
+## 🔗 Links
+
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/alharari01)
+
