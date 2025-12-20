@@ -13,11 +13,8 @@ SubMan is a standalone Android application designed for efficient subscription m
 
 ## Visual Interface
 
-![alt text](https://github.com/alharari01/SubMan/blob/main/design/welcome_onboarding/screen.png "onboarding")
+<!-- [https://raw.githubusercontent.com/alharari01/SubMan/refs/heads/main/design/Untitled%20design.jpg] -->
 
-Placeholder for Feature Interaction Screenshots
-<!-- [IMAGE_PLACEHOLDER: add_subscription_screen] -->
-<!-- [IMAGE_PLACEHOLDER: calendar_view_screen] -->
 
 ## Technical Implementation
 
