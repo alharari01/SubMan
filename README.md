@@ -25,6 +25,7 @@ The application is built using the following architecture and technologies:
 - **Preferences**: Shared Preferences for configuration persistence
 - **UI Components**: Custom design system including a premium credit-card styled hero interface
 
+## Download Beta from releases
   [Download Beta Apk](https://github.com/alharari01/SubMan/releases/tag/v0.1.0-beta)
 
 
